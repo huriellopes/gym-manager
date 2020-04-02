@@ -1,3 +1,5 @@
+const moment = require('moment')
+
 module.exports = {
   age: (timestamp) => {
     const today = new Date()
@@ -24,7 +26,11 @@ module.exports = {
       month,
       year,
       iso: `${year}-${month}-${day}`,
-      birthDay: `${day}/${$month}`
+      birthDay: `${day}/${$month}`,
+      format: `${day}/${month}/${year}`
     }
+  },
+  formataData: (data, formato) => {
+    return moment(data).format(formato)
   }
 }

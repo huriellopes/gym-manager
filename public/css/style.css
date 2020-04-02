@@ -264,3 +264,60 @@ tbody tr td:last-child a:hover,
 .table-container > a:hover {
   background-color: var(--color-ligth-purple);
 }
+
+/* FILTERS */
+.table-container .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.table-container .header a {
+  margin: 0;
+  width: 200px;
+}
+
+.table-container .header form {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  align-items: center;
+  grid-gap: 8px;
+}
+
+.table-container .header form input {
+  border: 1px solid #eee;
+  padding: 4px 8px;
+}
+
+.table-container .header form button[type="submit"] {
+  margin: 0;
+}
+
+/* ==== PAGINATION ==== */
+.table-container {
+  display: grid;
+  grid-template: 64px 1fr 16px / 1fr;
+}
+
+.table-container .header {
+  margin: 0;
+  align-self: start;
+}
+
+.table-container .pagination {
+  margin: 0;
+  align-self: end;
+  justify-self: center;
+}
+
+.table-container .pagination a,
+.table-container .pagination span {
+  color: var(--color-purple);
+  text-decoration: none;
+  margin-right:  16px;
+}
+
+.table-container .pagination a:hover {
+  filter: brightness(0.3);
+  border-bottom: 1px solid var(--color-purple);
+}
