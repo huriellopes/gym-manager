@@ -1,15 +1,19 @@
 {
-  "name": "gerenciadorAcademia",
+  "name": "gym-manager",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Gerenciador de academias em NodeJs",
+  "main": "server.js",
   "scripts": {
     "start": "npm-run-all -p nodemon browsersync",
     "nodemon": "nodemon server.js",
     "browsersync": "browser-sync start --proxy http://localhost:3333 --files 'public,views'"
   },
   "keywords": [],
-  "author": "",
+  "author": "Huriel Lopes",
+  "repository": {
+    "url": "https://github.com/huriellopes/gym-manager",
+    "directory": "https://github.com/huriellopes/gym-manager.git"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
