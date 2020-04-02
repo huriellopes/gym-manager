@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --color-purple: #7159c1;
+  --color-ligth-purple: #7f65d4;
+  --color-white: #ffffff;
+  --color-gray: #777;
+  --color-dark-gray: #555;
+  --color-secondary: #F7DF1E;
+  --color-red: #ec1212de;
+  --color-gelo: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-purple);
+}
+
+header {
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 32px;
+  text-align: center;
+}
+
+.links {
+  font-size: 22px;
+}
+
+.links a + a {
+  margin-left: 32px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--color-gray);
+  position: relative;
+}
+
+.links a.active {
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.links a:hover {
+  color: var(--color-purple);
+}
+
+.links a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--color-purple);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: width 200ms ease-in-out;
+}
+
+/* ==== CARD ==== */
+.card {
+  background-color: var(--color-white);
+  width: 800px;
+  min-height: 400px;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.4);
+  animation-name: up 200ms ease;
+}
+
+.card .avatar {
+  background-repeat: no-repeat;
+  width: 400px;
+  min-height: 400px;
+  background-position: center center;
+  background-size: cover;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==== DETAILS ==== */
+.details {
+  padding: 32px;
+}
+
+.details .item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+
+.details .item:last-child {
+  border-bottom: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-gray);
+  letter-spacing: 0.7px;
+  font-weight: 400;
+}
+
+.details .item div:nth-child(2) {
+  color: var(--color-dark-gray);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.details h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.details .item span {
+  padding: 8px 16px;
+  background-color: var(--color-secondary);
+  border-radius: 16px;
+  color: var(--color-gray);
+  margin-right: 4px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* ==== FORM ==== */
+input,
+select {
+  width: 100%;
+  outline: none;
+  color: var(--color-dark-gray);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+input[type='radio'] {
+  width: initial;
+  margin-right: 4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button[type='submit'],
+a.button {
+  padding: 8px 32px;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 100%;
+  font-size: 16px;
+}
+
+a.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#form-delete button[type='submit'] {
+  margin-top: 8px;
+  background-color: var(--color-red);
+}
+
+/* ==== INDEX INSTRUCTORS ==== */
+
+.table-container {
+  display: block;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.table-container table {
+  border-spacing: 0;
+}
+
+.table-container thead tr th {
+  text-align: center;
+}
+
+.table-container tbody tr td {
+  text-align: center;
+}
+
+td, th {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-gelo);
+}
+
+th {
+  text-transform: uppercase;
+  color: var(--color-gray);
+  font-size: 14px;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr td:first-child {
+  display: grid;
+  grid-template-columns: 64px 1fr; 
+  align-items: center;
+}
+
+tbody tr td:first-child span {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 3px 1px 6px -4px rgba(0,0,0,0.4);
+  border: 2px solid var(--color-white);
+}
+
+tbody tr td:last-child a,
+.table-container > a {
+  background-color: var(--color-purple);
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 12px;
+  border-radius: 4px;
+  transition: color 700ms;
+}
+
+.table-container > a {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+tbody tr td:last-child a:hover,
+.table-container > a:hover {
+  background-color: var(--color-ligth-purple);
+}

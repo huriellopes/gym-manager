@@ -1,0 +1,51 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "HURIEL C LOPES",
+      "email": "huriellopes199620@gmail.com",
+      "birth": "1992-11-29",
+      "gender": "M",
+      "blood": "A+",
+      "weight": "95",
+      "height": "185",
+      "created_at": "2020-04-01"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "HURIEL C LOPES",
+      "email": "huriellopes1996@gmail.com",
+      "birth": "1996-10-29",
+      "gender": "M",
+      "blood": "A+",
+      "weight": "80",
+      "height": "180",
+      "created_at": "2020-04-01"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9",
+      "name": "Patricia Correia Lopes",
+      "email": "patriciacorreialopes@yahoo.com.br",
+      "birth": "1975-11-29",
+      "gender": "M",
+      "blood": "A+",
+      "weight": "70",
+      "height": "156",
+      "created_at": "2020-04-01"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Huriel Correia Lopes",
+      "birth": "1996-10-29",
+      "gender": "M",
+      "services": "Musculação, Crossfit, Natação",
+      "created_at": "2020-04-01"
+    }
+  ]
+}
